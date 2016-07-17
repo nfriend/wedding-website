@@ -19,6 +19,11 @@ body, html {
         &.dark {
             background-color: $dark;
         }
+
+        &.unrestricted-height {
+            height: auto;
+            min-height: auto;
+        }
     }
 
     .title-container {
@@ -188,31 +193,43 @@ body, html {
     }
 
     .accomodations {
-        position: absolute;
         color: $light;
-        top: 50vh;
+        padding: 20px;
+        padding-top: 80px;
+        padding-bottom: 100px;
         width: 100vw;
         text-align: center;
-        margin-top: -200px;
 
         .accomodations-title {
             font-size: 84px;
             font-weight: 300;
             letter-spacing: 13px;
+            margin-bottom: 20px;
         }
 
         .accomodations-info {
             font-size: 20px;
+            font-weight: 300;
+        }
+
+        .accomodation-image {
+            border: 5px solid $light;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
     }
 
     .travel {
-        position: absolute;
         color: $dark;
-        top: 50vh;
+        padding-top: 80px;
+        padding-bottom: 100px;
         width: 100vw;
         text-align: center;
-        margin-top: -200px;
 
         .travel-title {
             font-size: 84px;
@@ -223,15 +240,27 @@ body, html {
         .travel-info {
             font-size: 20px;
         }
+
+        .travel-image {
+            border: 5px solid $dark;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            border-color: $dark;
+        }
     }
 
     .tourism {
-        position: absolute;
         color: $light;
-        top: 50vh;
+        padding-top: 80px;
+        padding-bottom: 100px;
         width: 100vw;
         text-align: center;
-        margin-top: -200px;
 
         .tourism-title {
             font-size: 84px;
@@ -240,6 +269,24 @@ body, html {
         }
 
         .tourism-info {
+            font-size: 20px;
+        }
+    }
+
+    .photos {
+        color: $dark;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        width: 100vw;
+        text-align: center;
+
+        .photos-title {
+            font-size: 84px;
+            font-weight: 300;
+            letter-spacing: 13px;
+        }
+
+        .photos-info {
             font-size: 20px;
         }
     }
@@ -314,6 +361,10 @@ body, html {
             .accomodations-info {
                 font-size: 14px;
             }
+
+            .accomodations-info {
+                text-align: center;
+            }
         }
 
         .travel {
@@ -334,6 +385,17 @@ body, html {
             }
 
             .tourism-info {
+                font-size: 14px;
+            }
+        }
+
+        .photos {
+            .photos-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+
+            .photos-info {
                 font-size: 14px;
             }
         }
@@ -371,6 +433,10 @@ body, html {
                 font-size: 54px;
                 letter-spacing: 8px;
             }
+
+            .accomodations-info {
+                text-align: center;
+            }
         }
     }
 }
@@ -395,5 +461,39 @@ body, html {
             right: 0;
             width: 100vw;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    .accomodation-image {
+        float: right;
+
+        &.accomodation-image-left {
+            float: left;
+        }
+    }
+
+    .travel-image {
+        float: right;
+
+        &.travel-image-left {
+            float: left;
+        }
+    }
+
+    .accomodation-description-left {
+        text-align: left;
+    }
+
+    .accomodation-description-right {
+        text-align: right;
+    }
+
+    .travel-description-left {
+        text-align: left;
+    }
+
+    .travel-description-right {
+        text-align: right;
     }
 }
