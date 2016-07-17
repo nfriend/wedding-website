@@ -77,6 +77,7 @@ body, html {
         position: absolute;
         top: 50vh;
         margin-top: -227px;
+        color: $dark;
 
         .are-getting-married {
             color: $dark;
@@ -101,6 +102,55 @@ body, html {
                     clear: left;
                 }
             }
+        }
+    }
+
+    .rsvp {
+        color: $light;
+        text-align: center;
+        font-size: 20px;
+        top: 50vh;
+        margin-top: -224px;
+
+        .rsvp-title {
+            font-size: 84px;
+            letter-spacing: 13px;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+
+        .rsvp-info {
+            margin-top: 40px;
+
+            .rsvp-button {
+                letter-spacing: 5px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .rsvp-divider {
+        position: absolute;
+        left: 50vw;
+        border-right: 2px solid $light;
+        height: 70vh;
+        top: 15vh;
+        width: 0;
+    }
+
+    .streaming-info {
+        color: $light;
+        text-align: center;
+        font-size: 20px;
+        top: 50vh;
+        margin-top: -224px;
+
+        .streaming-info-title {
+            font-size: 64px;
+            letter-spacing: 13px;
+            font-weight: 300;
+            margin-top: 40px;
+            margin-bottom: 55px;
         }
     }
 }

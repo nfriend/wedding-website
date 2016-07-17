@@ -56,7 +56,7 @@ gulp.task('styles', function () {
 
 gulp.task('assets', function () {
     return gulp.src('./assets/**/*')
-        .pipe('./dist/assets');
+        .pipe(gulp.dest('./dist/assets'));
 });
 
 gulp.task('watch-styles', ['styles'], function () {
