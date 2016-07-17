@@ -1,28 +1,106 @@
+$dark: #292a2b;
+$light: #F7F7EB;
+
 body, html {
     padding: 0;
     margin: 0;
 }
 
 .wedding-website {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
     .section { 
         height: 100vh; 
-
-        background-color: #F2F1E9;
+        position: relative;
+        background-color: $light;
 
         &.dark {
-            background-color: #3D3D3D;
+            background-color: $dark;
         }
     }
 
     .title-container {
-        color: #F2F1E9;
+        color: $light;
         position: absolute;
         top: 50vh;
-        left: 35vw;
+        left: 30vw;
         text-align: center;
         margin-left: -155px;
-        margin-top: -100px;
+        margin-top: -140px;
+        font-weight: 300;
+
+        .large-title {
+            font-size: 84px;
+            letter-spacing: 13px;
+        }
+
+        .small-title {
+            font-size: 24px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-style: italic;
+        }
+    }
+
+    .fireworks {
+        height: 100vh;
+        right: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .baethany {
+        height: 100vh;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .rings {
+        position: absolute;
+        top: 100vh;
+        margin-top: -63px;
+        height: 120px;
+        left: 50vw;
+        margin-left: -60px;
+        z-index: 10;
+
+        &.inverted {
+            margin-top: -57px;
+        }
+    }
+
+    .are-getting-married-container {
+        right: 0;
+        width: 60vw;
+        text-align: center;
+        margin-top: 30px;
+        position: absolute;
+        top: 50vh;
+        margin-top: -227px;
+
+        .are-getting-married {
+            color: $dark;
+            font-size: 50px;
+            letter-spacing: 8px;
+            font-weight: 300;
+        }
+
+        .when-where-container {
+            display: inline-block;
+            margin-top: 50px;
+
+            .column {
+                margin-bottom: 10px;
+                font-size: 20px;
+                text-align: left;
+                float: left;
+
+                &.column-1 {
+                    width: 120px;
+                    font-style: italic;
+                    clear: left;
+                }
+            }
+        }
     }
 }

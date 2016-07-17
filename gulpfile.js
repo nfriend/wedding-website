@@ -15,7 +15,7 @@ var uniqueId = uuid.v4();
 gulp.task('default', function () {
     return runSequence(
         ['clean-dist'],
-        ['html', 'scripts', 'styles']
+        ['html', 'scripts', 'styles', 'assets']
     );
 });
 
@@ -52,6 +52,11 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./dist'))
         .pipe(concat('wedding-website.css'))
         .pipe(gulp.dest('./styles'));
+});
+
+gulp.task('assets', function () {
+    return gulp.src('./assets/**/*')
+        .pipe('./dist/assets');
 });
 
 gulp.task('watch-styles', ['styles'], function () {
