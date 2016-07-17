@@ -4,6 +4,7 @@ $light: #F7F7EB;
 body, html {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .wedding-website {
@@ -11,6 +12,7 @@ body, html {
 
     .section { 
         height: 100vh; 
+        min-height: 580px;
         position: relative;
         background-color: $light;
 
@@ -28,6 +30,7 @@ body, html {
         margin-left: -155px;
         margin-top: -140px;
         font-weight: 300;
+        z-index: 10;
 
         .large-title {
             font-size: 84px;
@@ -43,6 +46,7 @@ body, html {
 
     .fireworks {
         height: 100vh;
+        min-height: 580px;
         right: 0;
         top: 0;
         position: absolute;
@@ -50,6 +54,7 @@ body, html {
 
     .baethany {
         height: 100vh;
+        min-height: 580px;
         left: 0;
         top: 0;
         position: absolute;
@@ -57,15 +62,15 @@ body, html {
 
     .rings {
         position: absolute;
-        top: 100vh;
-        margin-top: -63px;
+        bottom: 0;
+        margin-bottom: -57px;
         height: 120px;
         left: 50vw;
         margin-left: -60px;
         z-index: 10;
 
         &.inverted {
-            margin-top: -57px;
+            margin-bottom: -63px;
         }
     }
 
@@ -78,6 +83,7 @@ body, html {
         top: 50vh;
         margin-top: -227px;
         color: $dark;
+        z-index: 10;
 
         .are-getting-married {
             color: $dark;
@@ -138,6 +144,14 @@ body, html {
         width: 0;
     }
 
+    .rsvp-divider-horizontal {
+        border-bottom: 2px solid $light;
+        width: 70vw;
+        margin-left: 15vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .streaming-info {
         color: $light;
         text-align: center;
@@ -151,6 +165,235 @@ body, html {
             font-weight: 300;
             margin-top: 40px;
             margin-bottom: 55px;
+        }
+    }
+
+    .registry {
+        position: absolute;
+        color: $dark;
+        top: 50vh;
+        width: 100vw;
+        text-align: center;
+        margin-top: -200px;
+
+        .registry-title {
+            font-size: 84px;
+            font-weight: 300;
+            letter-spacing: 13px;
+        }
+
+        .registry-info {
+            font-size: 20px;
+        }
+    }
+
+    .accomodations {
+        position: absolute;
+        color: $light;
+        top: 50vh;
+        width: 100vw;
+        text-align: center;
+        margin-top: -200px;
+
+        .accomodations-title {
+            font-size: 84px;
+            font-weight: 300;
+            letter-spacing: 13px;
+        }
+
+        .accomodations-info {
+            font-size: 20px;
+        }
+    }
+
+    .travel {
+        position: absolute;
+        color: $dark;
+        top: 50vh;
+        width: 100vw;
+        text-align: center;
+        margin-top: -200px;
+
+        .travel-title {
+            font-size: 84px;
+            font-weight: 300;
+            letter-spacing: 13px;
+        }
+
+        .travel-info {
+            font-size: 20px;
+        }
+    }
+
+    .tourism {
+        position: absolute;
+        color: $light;
+        top: 50vh;
+        width: 100vw;
+        text-align: center;
+        margin-top: -200px;
+
+        .tourism-title {
+            font-size: 84px;
+            font-weight: 300;
+            letter-spacing: 13px;
+        }
+
+        .tourism-info {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wedding-website {
+        .title-container {
+            left: 50vw;
+            margin-left: -140px;
+
+            .large-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+        }
+
+        .are-getting-married-container {
+            width: 100vw;
+
+            .when-where-container {
+                .column {
+                    font-size: 16px;
+
+                    &.column-1 {
+                        width: 70px;
+                    }
+                }
+            }
+        }
+
+        #info {
+            height: 120vh;
+        }
+
+        #rsvp {
+            height: 170vh;
+        }
+
+        .rsvp {
+            font-size: 14px;
+
+            .rsvp-info {
+                .rsvp-button {
+                    letter-spacing: 0px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .streaming-info {
+            font-size: 14px;
+        }
+
+        .registry {
+            .registry-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+
+            .registry-info {
+                font-size: 14px;
+            }
+        }
+
+        .accomodations {
+            .accomodations-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+
+            .accomodations-info {
+                font-size: 14px;
+            }
+        }
+
+        .travel {
+            .travel-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+
+            .travel-info {
+                font-size: 14px;
+            }
+        }
+
+        .tourism {
+            .tourism-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+
+            .tourism-info {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .wedding-website {
+        .title-container {
+            left: 30vw;
+            margin-left: -150px;
+
+            .large-title {
+                font-size: 64px;
+                letter-spacing: 10px;
+            }
+        }
+
+        #rsvp {
+            height: 130vh;
+        }
+
+        .rsvp {
+            top: 10vh;
+            margin-top: 0;
+        }
+
+        .streaming-info {
+            top: 30vh;
+            margin-top: 0;
+        }
+
+        .accomodations {
+            .accomodations-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/1) { 
+    .hidden-portrait {
+        display: none;
+    }
+
+    .wedding-website {
+        .title-container {
+            left: 50vw;
+            margin-left: -140px;
+            
+            .large-title {
+                font-size: 54px;
+                letter-spacing: 8px;
+            }
+        }
+
+        .are-getting-married-container {
+            right: 0;
+            width: 100vw;
         }
     }
 }
