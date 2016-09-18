@@ -185,15 +185,15 @@ body, html {
 
     .registry {
         position: absolute;
-        color: $dark;
+        color: $light;
         top: 50vh;
         width: 100vw;
         text-align: center;
         margin-top: -200px;
+        font-weight: 300;
 
         .registry-title {
             font-size: 84px;
-            font-weight: 300;
             letter-spacing: 13px;
         }
 
@@ -208,17 +208,17 @@ body, html {
             letter-spacing: 5px;
             white-space: normal;
             max-width: 90%;
-            background: $dark;
-            color: $light;
+            background: $light;
+            color: $dark;
 
             &:hover {
-                background: lighten($dark, 10%);
+                background: #ddd;
             }
         }
     }
 
     .accomodations {
-        color: $light;
+        color: $dark;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
@@ -234,11 +234,11 @@ body, html {
 
         .accomodations-info {
             font-size: 20px;
-            font-weight: 300;
+            //font-weight: 300;
         }
 
         .accomodation-image {
-            border: 5px solid $light;
+            border: 5px solid $dark;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -250,7 +250,7 @@ body, html {
     }
 
     .travel {
-        color: $dark;
+        color: $light;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
@@ -266,10 +266,11 @@ body, html {
 
         .travel-info {
             font-size: 20px;
+            font-weight: 300;
         }
 
         .travel-image {
-            border: 5px solid $dark;
+            border: 5px solid $light;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -278,23 +279,23 @@ body, html {
             margin-top: 40px;
             margin-bottom: 40px;
 
-            border-color: $dark;
+            border-color: $light;
         }
     }
 
     .things-to-do {
-        color: $light;
+        color: $dark;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
         width: 100vw;
         text-align: center;
-        font-weight: 300;
 
         .things-to-do-title {
             font-size: 84px;
             letter-spacing: 13px;
             margin-bottom: 20px;
+            font-weight: 300;
         }
 
         .things-to-do-info {
@@ -525,5 +526,15 @@ body, html {
 
     .travel-description-right {
         text-align: right;
+    }
+}
+
+.extra-big-only {
+    display: initial;
+}
+
+@media(min-width: 1350px) {
+    .extra-big-only {
+        display: none;
     }
 }
