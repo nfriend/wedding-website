@@ -121,8 +121,38 @@ body, html {
         }
     }
 
-    .rsvp {
+    .schedule {
         color: $light;
+        padding: 20px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        width: 100vw;
+        text-align: center;
+        font-weight: 300;
+
+        .schedule-title {
+            font-size: 84px;
+            font-weight: 300;
+            letter-spacing: 13px;
+            margin-bottom: 60px;
+        }
+
+        .schedule-info {
+            font-size: 20px;
+            text-align: center;
+
+            .schedule-container {
+                display: inline-block;
+                margin: auto;
+                position: relative;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .rsvp {
+        color: $dark;
         text-align: center;
         font-size: 20px;
         top: 50vh;
@@ -131,8 +161,8 @@ body, html {
         .rsvp-title {
             font-size: 84px;
             letter-spacing: 13px;
-            font-weight: 300;
             margin-top: 30px;
+            font-weight: 300;
         }
 
         .rsvp-info {
@@ -141,10 +171,11 @@ body, html {
             .rsvp-button {
                 letter-spacing: 5px;
                 margin-top: 20px;
-                background: $light;
+                background: $dark;
+                color: $light;
 
                 &:hover {
-                    background: #e6e6e6;
+                    background: lighten($dark, 10%);
                 }
             }
         }
@@ -153,14 +184,14 @@ body, html {
     .rsvp-divider {
         position: absolute;
         left: 50vw;
-        border-right: 2px solid $light;
+        border-right: 2px solid $dark;
         height: 70vh;
         top: 15vh;
         width: 0;
     }
 
     .rsvp-divider-horizontal {
-        border-bottom: 2px solid $light;
+        border-bottom: 2px solid $dark;
         width: 70vw;
         margin-left: 15vw;
         margin-top: 20px;
@@ -168,7 +199,7 @@ body, html {
     }
 
     .streaming-info {
-        color: $light;
+        color: $dark;
         text-align: center;
         font-size: 20px;
         top: 50vh;
@@ -181,20 +212,31 @@ body, html {
             margin-top: 40px;
             margin-bottom: 55px;
         }
+
+        .youtube-button {
+            letter-spacing: 5px;
+            margin-top: 20px;
+            background: $dark;
+            color: $light;
+
+            &:hover {
+                background: lighten($dark, 10%);
+            }
+        }
     }
 
     .registry {
         position: absolute;
-        color: $light;
+        color: $dark;
         top: 50vh;
         width: 100vw;
         text-align: center;
         margin-top: -200px;
-        font-weight: 300;
 
         .registry-title {
             font-size: 84px;
             letter-spacing: 13px;
+            font-weight: 300;
         }
 
         .registry-info {
@@ -208,22 +250,23 @@ body, html {
             letter-spacing: 5px;
             white-space: normal;
             max-width: 90%;
-            background: $light;
-            color: $dark;
+            background: $dark;
+            color: $light;
 
             &:hover {
-                background: #ddd;
+                background: lighten($dark, 10%);
             }
         }
     }
 
     .accomodations {
-        color: $dark;
+        color: $light;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
         width: 100vw;
         text-align: center;
+        font-weight: 300;
 
         .accomodations-title {
             font-size: 84px;
@@ -238,7 +281,7 @@ body, html {
         }
 
         .accomodation-image {
-            border: 5px solid $dark;
+            border: 5px solid $light;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -250,7 +293,7 @@ body, html {
     }
 
     .travel {
-        color: $light;
+        color: $dark;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
@@ -266,11 +309,10 @@ body, html {
 
         .travel-info {
             font-size: 20px;
-            font-weight: 300;
         }
 
         .travel-image {
-            border: 5px solid $light;
+            border: 5px solid $dark;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -279,12 +321,12 @@ body, html {
             margin-top: 40px;
             margin-bottom: 40px;
 
-            border-color: $light;
+            border-color: $dark;
         }
     }
 
     .things-to-do {
-        color: $dark;
+        color: $light;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
@@ -300,11 +342,12 @@ body, html {
 
         .things-to-do-info {
             font-size: 20px;
+            font-weight: 300;
         }
     }
 
     .photos {
-        color: $dark;
+        color: $light;
         padding: 20px;
         padding-top: 80px;
         padding-bottom: 100px;
@@ -319,6 +362,7 @@ body, html {
 
         .photos-info {
             font-size: 20px;
+            font-weight: 300;
         }
     }
 }
