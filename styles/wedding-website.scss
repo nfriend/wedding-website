@@ -18,6 +18,10 @@ body, html {
 
         &.dark {
             background-color: $dark;
+
+            a {
+                color: #7bbaf1;
+            }
         }
 
         // &.unrestricted-height {
@@ -148,6 +152,11 @@ body, html {
                 text-align: left;
                 margin-bottom: 20px;
             }
+        }
+
+        .parking-note {
+            font-size: 17px;
+            text-align: center;
         }
     }
 
